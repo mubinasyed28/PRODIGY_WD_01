@@ -225,12 +225,18 @@ section{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
 footer {
   background-color: #111;
   position: fixed;
   bottom: 0;
   width: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+}
+
+footer.visible {
+  transform: translateY(0);
 }
 
 .footercontainer {
@@ -238,44 +244,45 @@ footer {
   padding: 70px 30px 20px;
 }
 
-.socialIcons{
+.socialIcons {
   display: flex;
   justify-content: center;
 }
 
-.socialIcons a{
+.socialIcons a {
   text-decoration: none;
- padding: 1%;
-  background-color: rgb(247, 215, 145);;
+  padding: 1%;
+  background-color: rgb(247, 215, 145);
   margin: 10px;
   border-radius: 50%;
 }
 
-.socialIcons a i{
+.socialIcons a i {
   font-size: 2em;
   color: black;
   opacity: 0.9;
 }
 
-.socialIcons a:hover{
+.socialIcons a:hover {
   background-color: #111;
   transition: 0.5s;
-
 }
 
-.socialIcons a:hover i{
+.socialIcons a:hover i {
   color: white;
   transition: 0.5s;
 }
 
-.footerBottom{
+.footerBottom {
   background-color: black;
   padding: 20px;
   text-align: center;
 }
-.footerBottom p{
+
+.footerBottom p {
   color: white;
 }
+
 
 @media screen and (max-width: 900px)
 {
