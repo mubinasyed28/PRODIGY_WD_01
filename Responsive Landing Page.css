@@ -226,14 +226,16 @@ section{
 }
 
 
-footer{
+footer {
   background-color: #111;
-}
-.footercontainer{
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  padding:  70px 30px 20px;
-  position: absolute;
-  
+}
+
+.footercontainer {
+  width: 100%;
+  padding: 70px 30px 20px;
 }
 
 .socialIcons{
